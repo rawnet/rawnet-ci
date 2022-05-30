@@ -9,10 +9,10 @@ module.exports = {
     },
     assert: {
       assertions: {
-        "categories:performance": ["error"],
-        "categories:accessibility": ["error"],
-        "categories:best-practices": ["error"],
-        "categories:seo": ["error"],
+        "categories:performance": ["warning"],
+        "categories:accessibility": ["warning"],
+        "categories:best-practices": ["warning"],
+        "categories:seo": ["warning"],
       },
     },
     upload: {
