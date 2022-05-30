@@ -2,20 +2,21 @@ module.exports = {
   ci: {
     collect: {
       numberOfRuns: 5,
-      startServerCommand: "npm start",
-      url: ["https://stanleygibbons.com/"],
-      settings: {
-        onlyCategories: ["performance"],
-        chromeFlags: "--no-sandbox",
-      },
+      url: [
+        "https://www.stanleygibbons.com/",
+        "https://sg-website.staging.rawnet.com/",
+      ],
     },
     assert: {
-      preset: "lighthouse:recommended",
       assertions: {
-        "categories:performance": [
-          "warn",
-          { minScore: 0.9, aggregationMethod: "median-run" },
-        ],
+        // "categories:performance": ["error", { minScore: 0.95 }],
+        // "categories:accessibility": ["error", { minScore: 0.95 }],
+        // "categories:best-practices": ["error", { minScore: 0.95 }],
+        // "categories:seo": ["error", { minScore: 0.95 }],
+        "categories:performance": ["error"],
+        "categories:accessibility": ["error"],
+        "categories:best-practices": ["error"],
+        "categories:seo": ["error"],
       },
     },
     upload: {

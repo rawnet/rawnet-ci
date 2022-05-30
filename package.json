@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "lighthouserc.js",
   "scripts": {
-    "start": "npm start",
-    "lhci": "lhci autorun"
+    "lh:ci": "lhci autorun"
   },
   "author": "",
   "license": "ISC",
