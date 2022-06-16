@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "main": "lighthouserc.js",
   "scripts": {
-    "lh:ci": "lhci autorun"
+    "lhci:audit": "concurrently \"npm run lhci:server\" \"lhci autorun\"",
+    "lhci:wizard": "lhci wizard",
+    "lhci:server": "lhci server --storage.storageMethod=sql --storage.sqlDialect=sqlite --storage.sqlDatabasePath=./db.sql"
   },
-  "author": "",
+  "author": "Troy Sheed",
   "license": "ISC",
-  "description": ""
+  "description": "Lighthouse CLI Local Auditing | Dashboard | CLI Server",
+  "devDependencies": {
+    "@lhci/cli": "^0.9.0",
+    "@lhci/server": "^0.9.0",
+    "concurrently": "^7.2.1",
+    "sqlite3": "^5.0.8"
+  }
 }

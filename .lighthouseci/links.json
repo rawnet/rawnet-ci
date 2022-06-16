@@ -1,4 +1,8 @@
 {
-  "https://www.stanleygibbons.com/": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1653924350210-82869.report.html",
-  "https://sg-website.staging.rawnet.com/": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1653924351065-12715.report.html"
+  "https://www.stanleygibbons.com/shop/great-britain/queen-victoria": "http://localhost:9001/app/projects/sg-website-perf-incognito-audit/compare/db39e0c4-e314-47a0-889f-848f70733d5c?compareUrl=https%3A%2F%2Fwww.stanleygibbons.com%2Fshop%2Fgreat-britain%2Fqueen-victoria",
+  "https://www.stanleygibbons.com/shop/great-britain-stamps": "http://localhost:9001/app/projects/sg-website-perf-incognito-audit/compare/db39e0c4-e314-47a0-889f-848f70733d5c?compareUrl=https%3A%2F%2Fwww.stanleygibbons.com%2Fshop%2Fgreat-britain-stamps",
+  "https://www.stanleygibbons.com/": "http://localhost:9001/app/projects/sg-website-perf-incognito-audit/compare/db39e0c4-e314-47a0-889f-848f70733d5c?compareUrl=https%3A%2F%2Fwww.stanleygibbons.com%2F",
+  "https://sg-website.staging.rawnet.com/shop/great-britain/queen-victoria": "http://localhost:9001/app/projects/sg-website-perf-incognito-audit/compare/db39e0c4-e314-47a0-889f-848f70733d5c?compareUrl=https%3A%2F%2Fsg-website.staging.rawnet.com%2Fshop%2Fgreat-britain%2Fqueen-victoria",
+  "https://sg-website.staging.rawnet.com/shop/great-britain-stamps": "http://localhost:9001/app/projects/sg-website-perf-incognito-audit/compare/db39e0c4-e314-47a0-889f-848f70733d5c?compareUrl=https%3A%2F%2Fsg-website.staging.rawnet.com%2Fshop%2Fgreat-britain-stamps",
+  "https://sg-website.staging.rawnet.com/": "http://localhost:9001/app/projects/sg-website-perf-incognito-audit/compare/db39e0c4-e314-47a0-889f-848f70733d5c?compareUrl=https%3A%2F%2Fsg-website.staging.rawnet.com%2F"
 }
