@@ -38,3 +38,23 @@ Lighthouse is a tool for auditing web pages for accessibility and performance.
 - [ ] Refactor into an npm package we can import into each of our projects to audit.
 - [ ] Fix concurrently script command.
 - [ ] Add budgets.json to the config.
+
+---
+
+## Notes
+
+Currently using the `--additive` flag to audit all the pages in the url array rather than using `lhci autorun` as we need to gather the results for desktop and mobile separately.
+
+This means that we need to `lhci collect` as specified in the `npm run lhci:mobile || npm run lhci:desktop` commands which run the `--additive` flags respectively.
+
+I have grouped these commands under `npm run lhci:all` which run both `mobile` and `desktop` audits.
+
+We then need to run `lhci upload` to upload the results to the server or our specified solution.
+
+1. `lhci collect`
+2. `lhci assert`
+3. `lhci upload`
+
+Instead of
+
+1. `lhci autorun`

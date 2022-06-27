@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "lighthouserc.js",
   "scripts": {
-    "lhci:audit": "concurrently \"npm run lhci:server\" \"lhci autorun\"",
     "lhci:wizard": "lhci wizard",
-    "lhci:server": "lhci server --storage.storageMethod=sql --storage.sqlDialect=sqlite --storage.sqlDatabasePath=./db.sql"
+    "lhci:server": "lhci server --storage.storageMethod=sql --storage.sqlDialect=sqlite --storage.sqlDatabasePath=./db.sql",
+    "lhci:desktop": "lhci collect --additive --config='./configs/desktopConfig.js' --no-lighthouserc",
+    "lhci:mobile": "lhci collect --additive --config='./configs/mobileConfig.js' --no-lighthouserc",
+    "lhci:all": "npm run lhci:desktop && npm run lhci:mobile",
+    "lhci:del": "rm -rf .lighthouseci"
   },
   "author": "Troy Sheed",
   "license": "ISC",
@@ -13,7 +16,6 @@
   "devDependencies": {
     "@lhci/cli": "^0.9.0",
     "@lhci/server": "^0.9.0",
-    "concurrently": "^7.2.1",
     "sqlite3": "^5.0.8"
   }
 }
